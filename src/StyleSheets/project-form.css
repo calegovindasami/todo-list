@@ -1,0 +1,68 @@
+.project-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-form h3 {
+  font-size: 32px;
+  font-weight: bolder;
+  color: #373f51;
+  text-decoration: underline;
+}
+
+#desc {
+  width: 70%;
+  height: 200px;
+  font-size: 20px;
+}
+
+#dropdown {
+  width: 60%;
+  font-size: 20px;
+  height: 30px;
+}
+
+#date {
+  width: 60%;
+  height: 30px;
+  font-size: 20px;
+}
+
+.btnGroup {
+  display: flex;
+  column-gap: 60px;
+}
+
+#btnProject {
+  background-color: #4b9ebf;
+  color: white;
+}
+
+#btnBack {
+  background-color: lightcoral;
+  color: white;
+}
+
+.btnGroup button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+}
+
+.btnGroup #btnBack:hover {
+  background-color: white;
+  color: lightcoral;
+}
+
+.btnGroup #btnProject:hover {
+  background-color: white;
+  color: #4b9ebf;
+}
