@@ -50,4 +50,4 @@ function createForm(projectName) {
   return form;
 }
 
-export default createForm;
+export { createForm };

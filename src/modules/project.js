@@ -1,6 +1,6 @@
 //Creates the elements for each project when loaded.
 function loadProjects(projectsArray) {
-  const projects = [];
+  let projects = [];
   projects = projectsArray;
 
   const projectContainer = document.createElement("div");
@@ -8,17 +8,27 @@ function loadProjects(projectsArray) {
 
   projects.forEach((project) => {
     const projectEntity = document.createElement("div");
-    const projectName = document.createElement("h1");
+    projectEntity.classList.add("project-entity");
+    const projectName = document.createElement("h3");
     projectName.classList.add("project-name");
     projectName.innerText = project.name;
+
+    const projectDate = document.createElement("h4");
+    projectDate.innerText = project.date;
 
     const btnDelete = document.createElement("button");
     btnDelete.classList.add("btnDelete");
     btnDelete.innerText = "X";
 
+    projectEntity.classList.add(project.priority);
+
     projectEntity.appendChild(projectName);
+    projectEntity.appendChild(projectDate);
     projectEntity.appendChild(btnDelete);
-    projectContainer.appendChild(projectContainer);
+    projectContainer.appendChild(projectEntity);
+    console.log("Loaded");
   });
   return projectContainer;
 }
+
+export { loadProjects };

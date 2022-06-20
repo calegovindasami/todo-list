@@ -1,0 +1,48 @@
+.project-entity {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  font-weight: normal;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-entity:hover {
+  background-color: gainsboro;
+}
+
+.project-entity h3 {
+  font-size: 22px;
+}
+
+.project-name {
+  font-weight: bolder;
+}
+
+.project-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.project-entity button {
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: lightcoral;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bolder;
+  border-radius: 32px;
+}
+
+.project-entity button:hover {
+  background-color: white;
+  color: lightcoral;
+}

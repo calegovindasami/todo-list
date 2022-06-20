@@ -91,7 +91,6 @@ button:hover {
 
 .item-container {
   width: 69%;
-  overflow-y: scroll;
   height: 100%;
   background-color: #f2f2f2;
   align-self: center;
